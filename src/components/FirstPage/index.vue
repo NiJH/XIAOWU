@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <div class="title">
-      <div class="a">2021</div>
+      <div class="a">一周年</div>
       <div class="b">
         WECHAT
         <br />
@@ -40,7 +40,7 @@ export default {};
   grid-template-columns: max-content 1fr;
 }
 .title .a {
-  font-size: 25vw;
+  font-size: 15vw;
 }
 .title .b {
   padding-top: 1em;

@@ -18,7 +18,7 @@
       </div>
       <div>...</div>
     </div>
-    <div class="d">比起网络<br />我们更喜欢在现实表达爱意</div>
+    <div class="d">比起网络<br />其实我们更喜欢在现实表达爱意</div>
   </div>
 </template>
 

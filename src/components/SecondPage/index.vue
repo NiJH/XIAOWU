@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="a">我们又在一起了一年</div>
-    <div class="b">年年有我，岁岁有我</div>
-    <div class="c">出发去看看我们的2021吧~</div>
+    <div class="a">这是我们在一起的第一年</div>
+    <div class="b">愿年年有我，岁岁有你</div>
+    <div class="c">出发去看看我们的这一年吧~</div>
   </div>
 </template>
 
