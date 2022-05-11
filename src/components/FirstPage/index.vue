@@ -11,11 +11,11 @@
     </div>
     <div class="human">
       <div class="boy">
-        <img class="a" src="@/assets/images/boy.png" />
+        <img class="a" src="@/assets/images/yang.png" />
         <img class="b" src="@/assets/images/cloud1.png" />
       </div>
       <div class="girl">
-        <img class="a" src="@/assets/images/girl.png" />
+        <img class="a" src="@/assets/images/yang.png" />
         <img class="b" src="@/assets/images/cloud2.png" />
       </div>
     </div>
@@ -51,12 +51,12 @@ export default {};
 }
 .human .boy {
   position: relative;
-  top: -10vh;
+  top: 0vh;
   animation: up-down 2s ease-in-out infinite both;
 }
 .human .girl {
   position: relative;
-  top: -20vh;
+  top: 0vh;
   left: 30vw;
   animation: up-down 2s ease-in-out infinite both;
 }
