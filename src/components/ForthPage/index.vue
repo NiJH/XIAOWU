@@ -11,6 +11,9 @@
     <div class="d">
       {{ time }}
     </div>
+	<div class="b">
+      记得那时候的我们还没契合好，正在互相磨合，互相熟悉对方中，现在想想也是挺有趣的
+    </div>
   </div>
 </template>
 

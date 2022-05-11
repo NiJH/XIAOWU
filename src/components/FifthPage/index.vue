@@ -10,7 +10,7 @@
       点
     </div>
     <div class="b">
-      <span style="font-size: 3.6vw"> {{ user }}: </span>
+      <span style="font-size: 4vw"> {{ user }}: </span>
       {{ content }}
     </div>
     <div class="c">...</div>
@@ -18,7 +18,7 @@
       {{ time }}
     </div>
 
-    <div class="e" style="padding-top: 5vh; font-size: 5vw">那天在做什么还能记起来吗</div>
+    <div class="e" style="padding-top: 5vh; font-size: 4vw">你看，那晚你也胃疼，一直到四点多才昏昏沉沉的睡了。以后我们都要按时吃饭，好好养胃，不许再有胃不舒服咯，不然冰淇淋要没得吃的。</div>
   </div>
 </template>
 

@@ -1,24 +1,24 @@
 <template>
   <div>
     <div class="a">
-      今年我们一共发了
+      这一年我们一共发了
       <span class="value"> {{ count }} </span>
       条消息
     </div>
     <div class="b">
       其中有
       <span class="value"> {{ imgCount }} </span>
-      是图片&nbsp; 其中有
+      是图片和表情&nbsp; 撤回了
       <span class="value"> {{ voiceCount }} </span>
-      是语音
+      条
     </div>
     <div class="c">
       <div v-for="(count, word, index) in loveWord" :key="index">
-        说{{ word }} <span class="value"> {{ count }} </span>次
+        {{ word }} <span class="value"> {{ count }} </span>次
       </div>
       <div>...</div>
     </div>
-    <div class="d">比起网络<br />其实我们更喜欢在现实表达爱意</div>
+    <div class="d">持续聊天391天<br />但比起网络<br />其实我们更喜欢在现实表达爱意</div>
   </div>
 </template>
 
