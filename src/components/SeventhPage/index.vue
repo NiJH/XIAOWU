@@ -2,7 +2,7 @@
   <div>
     <div class="a">
       这一年我们
-      <span class="value"> {{ maxMonth[0] }} </span>月 说的话最多 有<span
+      <span class="value"> 12 </span>月 说的话最多 有<span
         class="value"
       >
         {{ maxMonth[1] }} </span
@@ -37,7 +37,7 @@ export default {
     this.myChart = echarts.init(this.$refs.chart);
     this.myChart.setOption({
       tooltip: {},
-      xAxis: {},
+      xAxis: {data:['5','6','7','8','9','10','11','12','1','2','3','4','5']},
       yAxis: {},
       series: [
         {

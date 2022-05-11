@@ -10,10 +10,10 @@
       <div class="e">{{ b }}</div>
       <div class="f"></div>
       <div class="d">话痨月</div>
-      <div class="e" style="font-size: 5vw">{{ c }}月</div>
+      <div class="e" style="font-size: 5vw">12月</div>
       <div class="f"></div>
       <div class="h">
-        <img class="p" src="@/assets/images/result.png" />
+        <img class="p" src="@/assets/images/result2.png" />
         <img class="y" src="@/assets/images/cloud2.png" />
       </div>
       <div class="j">我们要</div>
@@ -110,8 +110,8 @@ export default {
 }
 .p {
   position: absolute;
-  width: 27vw;
-  left: 55vw;
+  width: 47vw;
+  left: 40vw;
   top: 40vh;
   z-index: 2;
 }

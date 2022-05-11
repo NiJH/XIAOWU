@@ -8,7 +8,7 @@
         {{ maxMonth[1] }} </span
       >条
     </div>
-    <div ref="chart" class="chart"></div>
+    <div ref="chart" class="chart"></div>	
   </div>
 </template>
 
