@@ -1,6 +1,9 @@
 <template>
   <div id="app" @click.capture.stop="next">
     <template v-if="isMobile">
+	<audio class="success" 
+		src="E:\WX\GIT\XiaoWu\src\assets\video\happy-birthday.MP3">
+	</audio>
       <FirstPage class="delay box" v-if="step === 1" @start="next"></FirstPage>
       <SecondPage
         class="delay box"
