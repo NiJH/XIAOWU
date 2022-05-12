@@ -1,7 +1,7 @@
 <template>
   <div id="app" @click.capture.stop="next">
     <template v-if="isMobile">
-	<video id="video" src="E:\WX\GIT\XiaoWu\src\assets\video\happy-birthday.MP3" controls="controls" hidden="hidden" autoplay="autoplay"  loop="loop"> </video>
+	<video id="video" src="https://m3.8js.net/xn/xia_qian_39s.mp3" controls="controls" hidden="hidden" autoplay="autoplay"  loop="loop"> </video>
     <img  id="img" class="play" style="transform: translate(-1584.4%, 121.5%) scale(1)" :src="sound" @click="play()">
 
       <FirstPage class="delay box" v-if="step === 1" @start="next"></FirstPage>
