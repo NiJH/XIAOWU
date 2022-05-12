@@ -2,7 +2,7 @@
   <div id="app" @click.capture.stop="next">
     <template v-if="isMobile">
 	<video id="video" src="https://m3.8js.net/xn/xia_qian_39s.mp3" controls="controls" hidden="hidden" autoplay="autoplay"  loop="loop"> </video>
-    <img  id="img" class="play" style="transform: translate(-1584.4%, 121.5%) scale(1)" :src="sound" @click="play()">
+    <img  id="img" class="play" style="" :src="sound" @click="play()">
 
       <FirstPage class="delay box" v-if="step === 1" @start="next"></FirstPage>
       <SecondPage
@@ -38,6 +38,7 @@ import SixthPage from "./components/SixthPage";
 import SeventhPage from "./components/SeventhPage";
 import EighthPage from "./components/EighthPage";
 import NinthPage from "./components/NinthPage";
+import sound from "./assets/images/cloud3.png";
 export default {
   name: "App",
   components: {
@@ -55,13 +56,13 @@ export default {
     return {
       step: 1,
       mask: true,
+	  sound: sound,
     };
   },
   computed: {
     handleMask() {
       return {
         mask: this.mask,
-		sound: require('./assets/images/cloud3.png'),
       };
     },
     isMobile() {
@@ -127,7 +128,10 @@ body {
   padding-top: 10vw;
   overflow: hidden;
 }
-
+.play {
+  width: 20vw;
+  height: 10vh;
+}
 .delay {
   animation-name: delay-display;
   animation-duration: 0.5s;
