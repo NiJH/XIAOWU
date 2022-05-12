@@ -1,7 +1,7 @@
 <template>
   <div id="app" @click.capture.stop="next">
     <template v-if="isMobile">
-	<audio id="video" src="https://m3.8js.net/xn/xia_qian_39s.mp3" :controls="controls" hidden="hidden" autoplay loop="loop"> </audio>
+	<audio id="video" src="https://m3.8js.net/xn/xia_qian_39s.mp3" controls autoplay loop="loop"> </audio>
     <img  id="img" class="play" style="" :src="sound" @click="play()">
 
       <FirstPage class="delay box" v-if="step === 1" @start="next"></FirstPage>
