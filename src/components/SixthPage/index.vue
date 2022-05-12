@@ -5,10 +5,10 @@
 
       <span style="font-size: 5vw" class="value"> {{ content }} </span>
       居然有
-      <span class="value"> {{ count }}次</span>
+      <span class="value"> {{ count }}次，看来我们活在当下</span>
     </div>
     <div class="b">
-      <img src="@/assets/images/cy.png" />
+      <img src="@/assets/images/cy2.png" />
     </div>
   </div>
 </template>
