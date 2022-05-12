@@ -1,14 +1,11 @@
 <template>
   <div id="app" @click.capture.stop="next">
     <template v-if="isMobile">
-	<video id="video" src="https://m3.8js.net/xn/xia_qian_39s.mp3" controls="controls" hidden="hidden" autoplay="autoplay"  loop="loop"> </video>
+	<video id="video" src="https://m3.8js.net/xn/xia_qian_39s.mp3" :controls="controls" hidden="hidden" autoplay loop="loop"> </video>
     <img  id="img" class="play" style="" :src="sound" @click="play()">
 
       <FirstPage class="delay box" v-if="step === 1" @start="next"></FirstPage>
-      <SecondPage
-        class="delay box"
-        v-if="step === 2"
-        @click.native="next"
+      <SecondPage class="delay box" v-if="step === 2" @click.native="next"
       ></SecondPage>
       <ThirdPage class="delay box" v-if="step === 3" @next="next"></ThirdPage>
       <ForthPage class="delay box" v-if="step === 4" @next="next"></ForthPage>
@@ -57,6 +54,7 @@ export default {
       step: 1,
       mask: true,
 	  sound: sound,
+	  autoplay : true,
     };
   },
   computed: {
