@@ -2,7 +2,7 @@
   <div>
     <div class="a">这是我们在一起的第一年</div>
     <div class="b">愿年年有我，岁岁有你</div>
-    <div class="c">出发去看看我们的这一年吧~</div>
+    <div class="c">一起去看看我们的这一年吧~</div>
   </div>
 </template>
 
@@ -34,8 +34,8 @@ export default {};
   animation-fill-mode: backwards;
 }
 .c {
-  font-size: 5vw;
-  font-weight: lighter;
+  font-size: 6vw;
+  padding-top: 5vh;
   animation-name: slide-top;
   animation-duration: 1s;
   animation-delay: 1.5s;

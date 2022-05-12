@@ -122,6 +122,5 @@ export default {};
 .star .label {
   font-size: 5vw;
   text-align: center;
-  font-weight: lighter;
 }
 </style>

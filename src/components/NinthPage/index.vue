@@ -7,7 +7,7 @@
       <div class="e">吃</div>
       <div class="f"></div>
       <div class="d">爱意词</div>
-      <div class="e">{{ b }}</div>
+      <div class="e">想你</div>
       <div class="f"></div>
       <div class="d">话痨月</div>
       <div class="e" style="font-size: 5vw">12月</div>

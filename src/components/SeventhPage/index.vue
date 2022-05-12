@@ -44,7 +44,7 @@ export default {
           type: "bar",
           data: this.arr,
           itemStyle: {
-            color: "#ebf45f",
+            color: "#EFEB5B",
           },
           clip :false
         },
