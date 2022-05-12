@@ -1,9 +1,7 @@
 <template>
   <div id="app" @click.capture.stop="next">
     <template v-if="isMobile">
-	<audio id="video" src="https://m3.8js.net/xn/xia_qian_39s.mp3" controls autoplay loop="loop"> </audio>
-    <img  id="img" class="play" style="" :src="sound" @click="play()">
-
+	<audio id="video" class = "audio_1" src="https://m3.8js.net/xn/xia_qian_39s.mp3" controls autoplay loop="loop"> </audio>
       <FirstPage class="delay box" v-if="step === 1" @start="next"></FirstPage>
       <SecondPage class="delay box" v-if="step === 2" @click.native="next"
       ></SecondPage>
@@ -90,7 +88,7 @@ export default {
 	play(){
       let vo = document.getElementById("video")
       if(this.sound == require('./assets/images/cloud3.png')){
-          this.sound = require('./assets/images/cloud3.png')
+          this.sound = require('./assets/images/cloud2.png')
           vo.autoplay = true
           vo.play()
       }
@@ -120,6 +118,14 @@ body {
   font-family: "Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑,
     STHeiti, MingLiu;
   font-size: 4vw;
+}
+.audio_1 {
+	padding-top: 2vw;
+	padding-left: 2vw;
+	float:left;
+	position: fixed;
+	height: 8vw;
+	width:65%;
 }
 .box {
   padding: 5vw;

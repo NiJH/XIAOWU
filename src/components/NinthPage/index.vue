@@ -1,5 +1,5 @@
 <template>
-  <div class="v">
+
     <div class="a">
       <div class="b">#一周年</div>
       <div class="c">年度聊天报告</div>
@@ -19,7 +19,7 @@
       <div class="j">我们要</div>
       <div class="i">一直热恋</div>
     </div>
-  </div>
+
 </template>
 
 <script>
@@ -77,7 +77,7 @@ export default {
   color: #73e373;
 }
 .a {
-  margin-top: 10vh;
+  margin-top: 15vh;
   height: 60vh;
   border: 5px #73e373 solid;
   background: #fef9f9;
@@ -86,11 +86,13 @@ export default {
 .b {
   font-size: 13vw;
   padding-bottom: unset;
+  color: #73e373;
 }
 .c {
   font-size: 5vw;
   font-weight: 700;
   padding-bottom: 5vh;
+  color: #73e373;
 }
 .d {
   color: black;
