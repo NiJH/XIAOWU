@@ -1,9 +1,9 @@
 <template>
   <div id="app" @click.capture.stop="next">
     <template v-if="isMobile">
-	<audio class="success" 
-		src="E:\WX\GIT\XiaoWu\src\assets\video\happy-birthday.MP3">
-	</audio>
+	<video id="video" src="E:\WX\GIT\XiaoWu\src\assets\video\happy-birthday.MP3" controls="controls" hidden="hidden" autoplay="autoplay"  loop="loop"> </video>
+    <img  id="img" class="play" style="transform: translate(-1584.4%, 121.5%) scale(1)" :src="sound" @click="play()">
+
       <FirstPage class="delay box" v-if="step === 1" @start="next"></FirstPage>
       <SecondPage
         class="delay box"
@@ -61,6 +61,7 @@ export default {
     handleMask() {
       return {
         mask: this.mask,
+		sound: require('./assets/images/cloud3.png'),
       };
     },
     isMobile() {
@@ -86,6 +87,19 @@ export default {
         return;
       }
       this.step++;
+    },
+	play(){
+      let vo = document.getElementById("video")
+      if(this.sound == require('./assets/images/cloud3.png')){
+          this.sound = require('./assets/images/cloud3.png')
+          vo.autoplay = true
+          vo.play()
+      }
+      else{
+          this.sound = require('./assets/images/cloud3.png')
+          vo.pause()
+      }
+
     },
   },
 };
