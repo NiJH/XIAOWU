@@ -1,12 +1,13 @@
 <template>
   <div id="app" @click.capture.stop="next">
     <template v-if="isMobile">
-	    <div class="body1">
+		<div class="body1">
 	    <div class="stars" ref="starsRef">
-	    		<div class="star" v-for="(item, index) in starsCount" :key="index"></div>
+	    	<div class="star" v-for="(item, index) in starsCount" :key="index"></div>	
 	    </div>
-	    </div>
-	    <audio id="video" class = "audio_1" src="https://m3.8js.net/eu/jiu_shi_ai_ni-tao_zhe_28s.mp3" controls autoplay loop="loop"> </audio>
+		</div>
+		<audio id="video" class = "audio_1" src="https://m3.8js.net/eu/jiu_shi_ai_ni-tao_zhe_28s.mp3" controls autoplay loop="loop"> </audio>
+	    
           <FirstPage class="delay box" v-if="step === 1" @start="next"></FirstPage>
           <SecondPage class="delay box" v-if="step === 2" @click.native="next"
           ></SecondPage>
@@ -131,11 +132,11 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
-  color: #1f9ef4;
+  color: white;
   overflow: hidden;
 }
 #app {
-  //background-image: linear-gradient(#1f9ef4, #a1e1ff);
+  background-image: linear-gradient(#1f9ef4, #a1e1ff);
   height: 100vh;
   overflow: hidden;
   font-family: "Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑,
@@ -150,12 +151,13 @@ body {
 	height: 8vw;
 	width:65%;
 }
+
 .box {
   padding: 5vw;
-  padding-top: 10vw;
+  margin-top: 10vw;
   overflow: hidden;
   position: fixed;
-  height : 100vh;
+  height : 90vh;
 }
 .play {
   width: 20vw;
