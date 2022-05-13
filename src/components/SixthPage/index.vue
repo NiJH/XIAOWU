@@ -5,7 +5,8 @@
 
       <span style="font-size: 5vw" class="value"> {{ content }} </span>
       居然有
-      <span class="value"> {{ count }}次，看来我们活在当下</span>
+      <span class="value"> {{ count }}</span>
+	  次，看来我们都是活在当下的人
     </div>
     <div class="b">
       <img src="@/assets/images/cy2.png" />
