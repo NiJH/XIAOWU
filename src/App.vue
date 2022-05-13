@@ -1,33 +1,30 @@
 <template>
   <div id="app" @click.capture.stop="next">
     <template v-if="isMobile">
-	
-	<div class="body1">
-	<div class="stars" ref="starsRef">
-			<div class="star" v-for="(item, index) in starsCount" :key="index"></div>
-	</div>
-	</div>
-	
-	<audio id="video" class = "audio_1" src="https://m3.8js.net/eu/jiu_shi_ai_ni-tao_zhe_28s.mp3" controls autoplay loop="loop"> </audio>
-      <FirstPage class="delay box" v-if="step === 1" @start="next"></FirstPage>
-      <SecondPage class="delay box" v-if="step === 2" @click.native="next"
-      ></SecondPage>
-      <ThirdPage class="delay box" v-if="step === 3" @next="next"></ThirdPage>
-      <ForthPage class="delay box" v-if="step === 4" @next="next"></ForthPage>
-      <FifthPage class="delay box" v-if="step === 5" @next="next"></FifthPage>
-      <SixthPage class="delay box" v-if="step === 6" @next="next"></SixthPage>
-      <SeventhPage
-        class="delay box"
-        v-if="step === 7"
-        @next="next"
-      ></SeventhPage>
-      <EighthPage class="delay box" v-if="step === 8" @next="next"></EighthPage>
-	  <NinthPage class="delay box" v-if="step === 9" @next="next"></NinthPage>
-
-      <div v-if="step !== 9" class="footer"></div>
-      <div :class="handleMask"></div>
-      
-    </template>
+	    <div class="body1">
+	    <div class="stars" ref="starsRef">
+	    		<div class="star" v-for="(item, index) in starsCount" :key="index"></div>
+	    </div>
+	    </div>
+	    <audio id="video" class = "audio_1" src="https://m3.8js.net/eu/jiu_shi_ai_ni-tao_zhe_28s.mp3" controls autoplay loop="loop"> </audio>
+          <FirstPage class="delay box" v-if="step === 1" @start="next"></FirstPage>
+          <SecondPage class="delay box" v-if="step === 2" @click.native="next"
+          ></SecondPage>
+          <ThirdPage class="delay box" v-if="step === 3" @next="next"></ThirdPage>
+          <ForthPage class="delay box" v-if="step === 4" @next="next"></ForthPage>
+          <FifthPage class="delay box" v-if="step === 5" @next="next"></FifthPage>
+          <SixthPage class="delay box" v-if="step === 6" @next="next"></SixthPage>
+          <SeventhPage
+            class="delay box"
+            v-if="step === 7"
+            @next="next"
+          ></SeventhPage>
+          <EighthPage class="delay box" v-if="step === 8" @next="next"></EighthPage>
+	      <NinthPage class="delay box" v-if="step === 9" @next="next"></NinthPage>
+	    
+          <div v-if="step !== 9" class="footer"></div>
+          <div :class="handleMask"></div>
+        </template>
     <template v-else> 请用手机查看 </template>
   </div>
 </template>
@@ -134,7 +131,7 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
-  color: white;
+  color: #1f9ef4;
   overflow: hidden;
 }
 #app {
