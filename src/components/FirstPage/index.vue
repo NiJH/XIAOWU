@@ -100,9 +100,9 @@ export default {};
 }
 
 .star {
-  position: absolute;
+  position: relative;
   bottom: 10vh;
-  left: calc(50vw - 15vw);
+  left: calc(50vw - 19vw);
 }
 .star .circle {
   width: 30vw;
@@ -122,5 +122,7 @@ export default {};
 .star .label {
   font-size: 5vw;
   text-align: center;
+  width:30vw;
+  
 }
 </style>

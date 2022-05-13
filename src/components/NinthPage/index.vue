@@ -1,6 +1,7 @@
 <template>
 
     <div class="a">
+	<div class="a1">
       <div class="b">#一周年</div>
       <div class="c">年度聊天报告</div>
       <div class="d">关键词</div>
@@ -18,6 +19,7 @@
       </div>
       <div class="j">我们要</div>
       <div class="i">一直热恋</div>
+	  </div>
     </div>
 
 </template>
@@ -79,9 +81,18 @@ export default {
 .a {
   margin-top: 15vh;
   height: 60vh;
-  border: 5px #73e373 solid;
-  background: #fef9f9;
-  padding: 5vw;
+  //background-color: unset;
+  //border: 5px #73e373 solid;
+  
+  padding: 3vw;
+  width: 94vw;
+  
+}
+.a1{
+	background: #fef9f9;
+	opacity: 0.7;
+	height: 100vh;
+	padding: 3vw;
 }
 .b {
   font-size: 13vw;
@@ -114,14 +125,14 @@ export default {
   position: absolute;
   width: 47vw;
   left: 40vw;
-  top: 40vh;
+  top: 30vh;
   z-index: 2;
 }
 .y {
   position: absolute;
   width: 60vw;
   left: 36vw;
-  top: 50vh;
+  top: 40vh;
 }
 .i,
 .j {
@@ -130,12 +141,12 @@ export default {
 }
 .j {
   font-size: 10vw;
-  top: 25vh;
+  top: 15vh;
   left: 50vw;
 }
 .i {
-  font-size: 8vw;
-  top: 32vh;
-  left: 53vw;
+  font-size: 10vw;
+  top: 20vh;
+  left: 55vw;
 }
 </style>
