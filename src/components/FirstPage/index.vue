@@ -49,6 +49,9 @@ export default {};
 .title .c {
   font-size: 10vw;
 }
+.human {
+  height :60vh;
+}
 .human .boy {
   position: relative;
   top: 0vh;
@@ -75,42 +78,43 @@ export default {};
   width: 27vw;
   position: relative;
   left: 10vw;
-  top: 15vh;
+  top: 10vh;
   z-index: 2;
 }
 .human .boy .b {
   width: 50vw;
   position: relative;
   left: -30vw;
-  top: 20vh;
+  top: 15vh;
 }
 
 .human .girl .a {
-  width: 57vw;
+  width: 55vw;
   position: relative;
   left: 5vw;
-  top: 15vh;
+  top: 10vh;
   z-index: 2;
 }
 .human .girl .b {
   width: 50vw;
   position: relative;
   left: 5vw;
-  top: -5vh;
+  top: -10vh;
 }
 
 .star {
   position: relative;
   bottom: 10vh;
-  left: calc(50vw - 19vw);
+  left: 33.5vw;
+  top: -8vh;
 }
 .star .circle {
-  width: 30vw;
-  height: 30vw;
+  width: 25vw;
+  height: 25vw;
   border-radius: 100%;
   background-color: #f04b3f;
   text-align: center;
-  font-size: 25vw;
+  font-size: 20vw;
   color: white;
   animation: hvr-ripple-out 2s ease-in-out infinite alternate both;
 }
@@ -122,7 +126,7 @@ export default {};
 .star .label {
   font-size: 5vw;
   text-align: center;
-  width:30vw;
+  width:25vw;
   
 }
 </style>
