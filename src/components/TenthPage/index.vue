@@ -36,4 +36,7 @@ export default {};
   animation-delay: 2s;
   animation-fill-mode: backwards;
 }
+.b img {
+    width: 80vw;
+}
 </style>

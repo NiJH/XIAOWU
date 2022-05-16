@@ -18,7 +18,7 @@
       {{ time }}
     </div>
 
-    <div class="e" style="padding-top: 5vh; font-size: 4vw">你看，那晚你也胃疼，一直到四点多才昏昏沉沉的睡了。以后我们都要按时吃饭，好好养胃，不许再有胃不舒服咯，不然冰淇淋要没得吃的。</div>
+    <div class="e" style="padding-top: 5vh; font-size: 4vw">你看，那晚你也胃疼，一直到四点多才昏昏沉沉的睡了。以后我们都要按时吃饭，好好养胃，不许再有胃不舒服咯，不然冰淇淋要没得吃的，冰可乐也喝不了了。</div>
   </div>
 </template>
 
