@@ -75,7 +75,7 @@ export default {};
   }
 }
 .human .boy .a {
-  width: 27vw;
+  width: 30vw;
   position: relative;
   left: 10vw;
   top: 10vh;
@@ -89,10 +89,10 @@ export default {};
 }
 
 .human .girl .a {
-  width: 55vw;
+  width: 45vw;
   position: relative;
-  left: 5vw;
-  top: 10vh;
+  left: 10vw;
+  top: 8vh;
   z-index: 2;
 }
 .human .girl .b {

@@ -1,5 +1,5 @@
 <template>
-
+	
     <div class="a">
 	<div class="a1">
       <div class="b">#一周年</div>
@@ -82,7 +82,7 @@ export default {
   margin-top: 15vh;
   height: 60vh;
   //background-color: unset;
-  //border: 5px #73e373 solid;
+  //border: 5px #1B2947 solid;
   
   padding: 3vw;
   width: 94vw;
@@ -90,7 +90,7 @@ export default {
 }
 .a1{
 	background: #fef9f9;
-	opacity: 0.7;
+	opacity: 0.85;
 	height: 100vh;
 	padding: 3vw;
 }
@@ -124,7 +124,7 @@ export default {
 .p {
   position: absolute;
   width: 47vw;
-  left: 40vw;
+  left: 43vw;
   top: 30vh;
   z-index: 2;
 }
@@ -146,7 +146,7 @@ export default {
 }
 .i {
   font-size: 10vw;
-  top: 20vh;
+  top: 23vh;
   left: 55vw;
 }
 </style>

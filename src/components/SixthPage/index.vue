@@ -8,9 +8,11 @@
       <span class="value"> {{ count }}</span>
 	  次，看来我们都是活在当下的人
     </div>
+	<div class="b1">
     <div class="b">
       <img src="@/assets/images/cy2.png" />
     </div>
+	</div>
   </div>
 </template>
 
@@ -32,11 +34,24 @@ export default {
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
 }
+.b1 {
+  width: 100%;
+  animation-name: slide-top;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
 .b img {
   width: 100%;
   animation-name: slide-top;
   animation-duration: 1s;
   animation-delay: 1s;
   animation-fill-mode: backwards;
+  animation: hvr-ripple-out 2s ease-in-out infinite alternate both;
+}
+@keyframes hvr-ripple-out {
+  100% {
+    transform: scale(1.05);
+  }
 }
 </style>
