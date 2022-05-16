@@ -22,8 +22,9 @@
           ></SeventhPage>
           <EighthPage class="delay box" v-if="step === 8" @next="next"></EighthPage>
 	      <NinthPage class="delay box" v-if="step === 9" @next="next"></NinthPage>
+		  <TenthPage class="delay box" v-if="step === 10" @next="next"></TenthPage>
 	    
-          <div v-if="step !== 9" class="footer"></div>
+          <div v-if="step !== 10" class="footer"></div>
           <div :class="handleMask"></div>
         </template>
     <template v-else> 请用手机查看 </template>
@@ -40,7 +41,7 @@ import SixthPage from "./components/SixthPage";
 import SeventhPage from "./components/SeventhPage";
 import EighthPage from "./components/EighthPage";
 import NinthPage from "./components/NinthPage";
-import sound from "./assets/images/cloud3.png";
+import TenthPage from "./components/TenthPage";
 export default {
   name: "App",
   components: {
@@ -53,12 +54,12 @@ export default {
     SeventhPage,
     EighthPage,
     NinthPage,
+	TenthPage,
   },
   data() {
     return {
       step: 1,
       mask: true,
-	  sound: sound,
 	  autoplay : true,
 	  starsCount: 800, //星星数量
       distance: 900, //间距
@@ -104,23 +105,10 @@ export default {
   },
   methods: {
     next() {
-      if (this.step === 9) {
+      if (this.step === 10) {
         return;
       }
       this.step++;
-    },
-	play(){
-      let vo = document.getElementById("video")
-      if(this.sound == require('./assets/images/cloud3.png')){
-          this.sound = require('./assets/images/cloud2.png')
-          vo.autoplay = true
-          vo.play()
-      }
-      else{
-          this.sound = require('./assets/images/cloud3.png')
-          vo.pause()
-      }
-
     },
   },
 };

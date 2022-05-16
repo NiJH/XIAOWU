@@ -90,7 +90,7 @@ export default {
 }
 .a1{
 	background: #fef9f9;
-	opacity: 0.85;
+	opacity: 0.80;
 	height: 100vh;
 	padding: 3vw;
 }
@@ -112,7 +112,7 @@ export default {
 .e {
   color: black;
   /* font-weight: bold; */
-  font-size: 12vw;
+  font-size: 10vw;
 }
 .f {
   height: 1px;
@@ -140,13 +140,21 @@ export default {
   color: #3c4739;
 }
 .j {
-  font-size: 10vw;
-  top: 15vh;
+  font-size: 6vw;
+  top: 18vh;
   left: 50vw;
 }
 .i {
-  font-size: 10vw;
-  top: 23vh;
-  left: 55vw;
+  font-size: 6vw;
+  top: 22vh;
+  left: 50vw;
+}
+.j,
+.i {
+  animation-name: slide-top;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+  font-weight: bold;
 }
 </style>
